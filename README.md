@@ -51,7 +51,7 @@ In this challenge, you are to build a Smurfs village database utilizing Redux as
   * [X] Add in the arguments needed to complete a standard reducer function.
   * [X] Add in a reducer case to accomidate the start of a smurf fetch.
   * [X] Add in a reducer case to accomidate the successful smurf api fetch.
-  * [ ] Add in a reducer cases to accomidate the failed smurf api fetch.
+  * [X] Add in a reducer cases to accomidate the failed smurf api fetch.
   * [ ] Add in a reducer case to accomidate adding a smurf (including the name, nickname, position, summary and an internally generated id) into your smurf list.
   * [ ] Add in a reducer case that adds in a value to the error message.
 
