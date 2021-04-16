@@ -4,6 +4,7 @@ export const FETCH_SMURFS_START = 'FETCH_SMURFS_START';
 export const FETCH_SMURFS_SUCCESS = 'FETCH_SMURFS_SUCCESS';
 export const FETCH_SMURFS_FAILURE = 'FETCH_SMURFS_FAILURE';
 export const ADD_SMURF = 'ADD_SMURF';
+export const FORM_ERROR = 'FORM_ERROR';
 
 export const fetchSmurfs = () => {
     return (dispatch) => {
@@ -21,6 +22,10 @@ export const fetchSmurfs = () => {
 
 export const addSmurf = (newSmurf) => {
     return ({type: ADD_SMURF, payload: newSmurf})
+}
+
+export const formError = () => {
+    return ({type: FORM_ERROR, payload: '"Name, position and nickname fields are required."'})
 }
 
 

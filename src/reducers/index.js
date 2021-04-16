@@ -2,7 +2,8 @@ import {
     FETCH_SMURFS_START, 
     FETCH_SMURFS_SUCCESS, 
     FETCH_SMURFS_FAILURE,
-    ADD_SMURF
+    ADD_SMURF,
+    FORM_ERROR
 } from '../actions'
 
 export const initialState = {
@@ -49,6 +50,13 @@ const reducer = (state = initialState, action) => {
                 smurfs: [...state.smurfs, newSmurf],
                 isLoading: false,
                 errorMessage: ''
+            }
+
+        case FORM_ERROR:
+            return {
+                ...state,
+                isLoading: false,
+                errorMessage: action.payload
             }
         
         default:
