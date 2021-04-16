@@ -9,6 +9,10 @@ import Smurf from './Smurf';
         return <h1>Loading...</h1>;
     }
 
+    if (props.errorMessage) {
+        return <h1>{props.errorMessage}</h1>
+    }
+
     return(<div className="listContainer">
         {props.smurfs.map(smurf =>  (
             <Smurf key={smurf.id} smurf={smurf}/>

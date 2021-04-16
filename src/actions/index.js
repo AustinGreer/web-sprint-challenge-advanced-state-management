@@ -13,7 +13,7 @@ export const fetchSmurfs = () => {
                 dispatch({type: FETCH_SMURFS_SUCCESS, payload: res.data})
             })
             .catch(err => {
-                console.log(err.message)
+                dispatch({type: FETCH_SMURFS_FAILURE, payload: 'Uh oh... There was an error!'})
             })
     }
 }

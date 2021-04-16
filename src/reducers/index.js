@@ -22,6 +22,13 @@ const reducer = (state = initialState, action) => {
                 isLoading: false,
                 errorMessage: ''
             })
+
+        case FETCH_SMURFS_FAILURE: 
+            return {
+                ...state,
+                isLoading: false,
+                errorMessage: action.payload
+            }
         
         default:
             return state;
