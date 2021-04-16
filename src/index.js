@@ -14,7 +14,6 @@ const { worker } = require('./mocks/browser');
 worker.start();
 
 const store = createStore(reducer, applyMiddleware(thunk, logger))
-console.log(store)
 
 const rootElement = document.getElementById("root");
 
